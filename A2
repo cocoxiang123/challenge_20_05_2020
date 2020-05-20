@@ -1,0 +1,26 @@
+/**
+ * @param {number} n
+ * @return {string[]}
+ */
+var fizzBuzz = function(n) {
+    var newArr = new Array(n);
+    for(var i =0;i<n;i++){
+    if((i+1)%3 ==0 && i>0){
+        if((i+1)%5 ==0){
+             newArr[i] ="FizzBuzz"
+        }
+        else{
+            newArr[i] ="Fizz"
+        }
+        }
+    else if((i+1)%5 ==0 && i>0){
+       newArr[i] ="Buzz"
+    }
+
+    else{
+       newArr[i] = (i+1).toString();
+    }
+    }
+
+    return newArr;
+};
